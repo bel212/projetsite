@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .banniere {
+            background-color: violet;
+            /* Couleur violet */
+            color: white;
+            /* Texte en blanc pour contraste */
+            padding: 10px 0;
+            /* Ajuster l'espacement autour du texte */
+        }
+
+        /* Ajouter un peu de marge au contenu pour que le texte ne touche pas les bords */
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: white;
+            height: 100%;
+            display: block;
+            /* Changer en block */
+            margin: 0;
+            /* Retirer les marges par défaut */
+            padding: 0;
+            /* Retirer le padding par défaut */
+        }
+
+        /* Les images doivent être responsives, mais pas se déformer */
+        img.img-fluid {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+
+        }
+
+        /* Assurer une taille de texte responsive */
+        h1,
+        h2,
+        h3 {
+            font-size: 2.5rem;
+            /* Taille par défaut */
+            color: violet;
+        }
+
+        @media (max-width: 767px) {
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.5rem;
+                /* Taille plus petite sur mobile */
+            }
+
+            /* Ajuster les images sur les petits écrans */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Redimensionner les éléments de menu pour une meilleure utilisation sur mobile */
+            .nav {
+                text-align: center;
+            }
+
+            /* Cacher certains éléments ou ajuster leur taille sur les petits écrans */
+            .bottom-block .row {
+                flex-direction: column;
+            }
+
+            .bottom-block .col-md-3 {
+                flex: 0 0 50%;
+                /* Deux images par ligne sur mobile */
+                max-width: 50%;
+            }
+
+            /* Ajuster les colonnes sur mobile */
+            .col-md-6 {
+                flex: 0 0 100%;
+                /* Prendre toute la largeur sur mobile */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <img src="media/logoUser.png" alt="logoUser" class="img-fluid">
+                <img src=" media/logosearch.png" alt="Logo Météo" class="img-fluid">
+            </div>
+
+        </div>
+
+
+        <div class="espacement"></div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h1 class="mb-0"></h1>
+                <img src="media/logometeo3.png" alt="Logo Météo" class="img-fluid">
+            </div>
+        </div>
+
+
+
+
+        <h1 class="banniere1" id="belminews">BELMI NEWS</h1>
+
+
+        <div class="banniere">
+            <aside>
+
+                <p>POLITIQUE SPORT VOS TEMOIGNAGES PEOPLE MONDE UKRAINE CONSO METEO SANTE</p>
+
+            </aside>
+        </div>
+
+
+
+        <!-- Menu de navigation, centré et responsive -->
+        <nav classe="navbarre">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
+                <li class="nav-item"><a class="nav-link" href="article.html">ARTICLE</a></li>
+                <li class="nav-item"><a class="nav-link" href="custom.html">CONFIG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteneur principal avec la row pour deux colonnes (gauche et droite) -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Bloc à gauche : Main avec l'image et l'article -->
+            <main class="col-md-6 col-12 mb-4">
+                <div class="left-block">
+                    <img src="media/imageprojet.jpg" alt="Image principale" class="img-fluid rounded">
+                    <h2 class="mt-3">A LA UNE</h2>
+                    <h4>
+                        <p class="Police1">Ces coins de Belgique dont le cinéma raffole. De nombreux
+                            tournages se déroulent en Belgique. Petit tour des lieux les plus prisés par le
+                            septième art.</p>
+                    </h4>
+                    <a href="media/article.html" class="read-more">Lire la suite</a>
+                </div>
+            </main>
+
+            <!-- Bloc à droite avec 4 images -->
+            <div class="col-md-6 col-12 mb-4">
+                <div class="right-block">
+                    <!-- Première ligne d'images -->
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="media/garciaphoto.jpg" alt="Image article 1" class="img-fluid rounded">
+                            <p class="text-center">Il y a une âme dans cette équipe": Rudi Garcia jubile après la
+                                réaction des Diables Rouges face à l'Ukraine</p>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="media/zelphoto.jpg" alt="Image article 2" class="img-fluid rounded">
+                            <p class="text-center">Volodymyr Zelensky annonce que de nouvelles frappes russes ont visé
+                                un hôpital après la discussion entre Trump et Poutine</p>
+                        </div>
+                    </div>
+
+                    <!-- Deuxième ligne d'images -->
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="media/harleyphoto.jpg" alt="Image article 3" class="img-fluid rounded">
+                            <p class="text-center">John espère que sa Harley-Davidson arrivera en Belgique avant le 1er
+                                avril: "Devrai-je payer plus cher avec les nouveaux droits de douane?"</p>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="media/tigerwoodsphoto.jpg" alt="Image article 4" class="img-fluid rounded">
+                            <p class="text-center">La légende du golf Tiger Woods confirme être en couple avec...
+                                l'ex-belle-fille de Trump</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloc du bas au-dessus du footer -->
+    <div class="container my-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="bottom-block">
+                    <h3>Autres articles</h3>
+                    <div class="row">
+                        <div class="col-md-3 col-6 mb-3">
+                            <img src="media/imageprojet.jpg" alt="Image 1" class="img-fluid rounded">
+                            <p class="text-center">Légende 1</p>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <img src="media/imageprojet.jpg" alt="Image 2" class="img-fluid rounded">
+                            <p class="text-center">Légende 2</p>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <img src="media/imageprojet.jpg" alt="Image 3" class="img-fluid rounded">
+                            <p class="text-center">Légende 3</p>
+                        </div>
+                        <div class="col-md-3 col-6 mb-3">
+                            <img src="media/imageprojet1.jpg" alt="Image 4" class="img-fluid rounded">
+                            <p class="text-center">Légende 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer py-4 bg-dark text-light text-center">
+        <p>&copy; Suivez-nous :
+            <br> Nos applications : Belmi News, Actu Belgique, Monde, Régions, Magazine, Sport, Football, Résultats /
+            Classements, People, Royautés, Buzz, Télé
+            <br> Belmi Belgium, Infos société, Charte vie privée, Conditions d'utilisation, Politique Cookies, Gérer les
+            cookies, Emplois et Stages, Plan d'accès, Publicité - Rossel Advertising
+            <br> Comment nous contacter ? Alertez-nous
+        </p>
+        <div class="division"></div>
+        <!-- Liens supplémentaires sous forme de listes organisées, mais sans liens -->
+        <div class="footer-links">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Nos thématiques</h5>
+                    <ul>
+                        <li>Info</li>
+                        <li>Sport</li>
+                        <li>Régions</li>
+                        <li>Culture</li>
+                        <li>Environnement</li>
+                        <li>Bien-Être</li>
+                        <li>Tech</li>
+                        <li>Vie pratique</li>
+                        <li>Services</li>
+                        <li>Actu en continu</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Autres sections</h5>
+                    <ul>
+                        <li>Grille des programmes</li>
+                        <li>Score center</li>
+                        <li>Météo</li>
+                        <li>MobilInfo</li>
+                        <li>Loterie</li>
+                        <li>Titres diffusés</li>
+                        <li>Concours</li>
+                        <li>Flux RSS</li>
+                        <li>Archives (sitemap)</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Nos émissions</h5>
+                    <ul>
+                        <li>Le Belmi Cactus</li>
+                        <li>On n'est pas des pigeons</li>
+                        <li>The Voice Belgique</li>
+                        <li>Jardins et Loisirs</li>
+                        <li>La Grande Forme</li>
+                        <li>IXPé</li>
+                        <li>Viva for life</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="division"></div>
+
+        <!-- Section contact et entreprise sans liens -->
+        <div class="footer-contact">
+            <p>
+                Contacter Belmi News | Recevoir Belmi News | Travailler a Belmi News | Notre Entreprise | Presse |
+                Éducation aux
+                Médias |
+                Visites guidées et ateliers | Régie publicitaire (RMB)
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

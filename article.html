@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article de Presse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .banniere {
+            background-color: violet;
+            /* Couleur violet */
+            color: white;
+            /* Texte en blanc pour contraste */
+            padding: 10px 0;
+            /* Ajuster l'espacement autour du texte */
+        }
+
+
+
+        /* Ajouter un peu de marge au contenu pour que le texte ne touche pas les bords */
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: white;
+            height: 100%;
+            display: block;
+            /* Changer en block */
+            margin: 0;
+            /* Retirer les marges par défaut */
+            padding: 0;
+            /* Retirer le padding par défaut */
+        }
+
+        /* Appliquer la police Georgia uniquement à l'article */
+        .article-content {
+            font-family: 'Georgia', serif;
+        }
+
+        /* Ajouter un peu de marge au contenu pour que le texte ne touche pas les bords */
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Les images doivent être responsives, mais pas se déformer */
+        img.img-fluid {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Assurer une taille de texte responsive */
+        h1,
+        h2,
+        h3 {
+            font-size: 2.5rem;
+            color: violet;
+        }
+
+        @media (max-width: 767px) {
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            /* Ajuster les images sur les petits écrans */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Redimensionner les éléments de menu pour une meilleure utilisation sur mobile */
+            .nav {
+                text-align: center;
+            }
+        }
+
+        /* Conteneur de l'article centré */
+        .article-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+            /* Centrer le conteneur horizontalement */
+            padding: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        /* Bloc de l'article */
+        .article-block {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #800080;
+            /* Bordure violette */
+            padding: 20px;
+            /* Espace intérieur */
+            line-height: 1.8;
+            /* Augmente l'espacement entre les lignes */
+
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header modifié pour être cohérent avec la page d'accueil -->
+    <header>
+
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <img src="media/logoUser.png" alt="logoUser" class="img-fluid">
+                <img src=" media/logosearch.png" alt="Logo Météo" class="img-fluid">
+            </div>
+
+        </div>
+
+
+        <div class="espacement"></div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h1 class="mb-0"></h1>
+                <img src="media/logometeo3.png" alt="Logo Météo" class="img-fluid">
+            </div>
+        </div>
+
+
+
+
+        <h1 class="banniere1" id="belminews">BELMI NEWS</h1>
+        <div class="banniere">
+            <aside>
+                <p>POLITIQUE SPORT VOS TEMOIGNAGES PEOPLE MONDE UKRAINE CONSO METEO SANTE</p>
+            </aside>
+        </div>
+
+        <!-- Menu de navigation, centré et responsive -->
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
+                <li class="nav-item"><a class="nav-link" href="article.html">ARTICLE</a></li>
+                <li class="nav-item"><a class="nav-link" href="custom.html">CONFIG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Contenu de l'article -->
+    <div class="container my-4 article-container">
+        <main class="col-md-12 col-12 mb-4">
+            <aside>
+                <p><strong>Date:</strong> 26 mars 2025</p>
+                <p><strong>Rédigé par:</strong> Adrien Corbeel</p>
+                <div>
+                    <p class="heure">il y a 4 heures <time datetime="PT0H2M6S"> 2 min</time>
+                    <p>
+                </div>
+            </aside>
+
+            <div class="article-block">
+                <p>
+                <h6>#CULTURE</h6>
+                </p>
+                <h1 class="mt-3">Ces coins de Belgique dont le cinéma raffole</h1><br>
+
+                <img src="media/imageprojet.jpg" alt="Image de l'article" class="img-fluid rounded">
+                <p>
+                <h6>© Versus Production</h6>
+                </p>
+
+                <div>
+                    <div>
+                        <p><strong>De nombreux
+                                tournages se déroulent en Belgique. Petit tour des lieux les plus prisés par le
+                                septième art.</strong></p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div>
+
+                    <h2>Les Ardennes</h2>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <p class="paragraphes">Les forêts immenses
+                                    et les collines pentues des Ardennes belges inspirent de nombreux cinéastes. C’est
+                                    bien simple, on ne compte plus les films qui s’y déroulent, ou l’utilisent comme
+                                    décor. Parmi tous les longs et courts-métrages existants, on peut notamment citer
+                                    "Les Géants". Le drame de Bouli Lanners place trois adolescents désœuvrés dans son
+                                    cadre ardennais. Livrés à eux-mêmes, les 3 garçons se retrouvent emportés, et nous
+                                    avec, dans une grande aventure.<br>
+                                    <br>
+                                    Le cinéaste belge Robin Pront semble lui aussi avoir été inspiré par la région,
+                                    puisqu’il a décidé de baptiser son premier long-métrage "D’Ardennen". Sorti
+                                    en 2016,
+                                    ce thriller poisseux fait des Ardennes le cadre fatidique de son drame criminel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>La Gare de Liège</h2>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <div>
+                        <p class="paragraphes">Le saviez-vous ?
+                            La Gare de Liège-Guillemins apparaît dans le premier volet des "Gardiens de la
+                            Galaxie"! Le dôme de Calatrava a tapé dans l’œil du studio Marvel, qui a
+                            intégré l’architecture futuriste de la gare au décor de planète Xandar, où les
+                            antihéros du film se rencontrent. Mais attention: ni Chris Pratt ni Zoe
+                            Saldana ne se sont rendus sur place. Ce sont les équipes des effets spéciaux qui ont
+                            scanné l’ensemble de la structure. On aperçoit aussi brièvement la gare dans le film
+                            de science-fiction "Gemini Man" où Will Smith joue un double rôle. Là non plus, le
+                            tournage ne s’est pas fait en Belgique.<br>
+                            <br>
+                            En revanche, Jean Dujardin s’est bien rendu à Liège pour tourner une scène de la
+                            comédie "Un homme la hauteur", tout comme Daniel Brühl, dans une séquence du
+                            thriller "Le Cinquième Pouvoir" sur Julian Assange. Dans ce dernier film, la gare
+                            "joue son propre rôle": les personnages sont bien dans la station de trains de
+                            la cité ardente plutôt que sur une autre planète.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Bruges</h2>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <div>
+                        <p class="paragraphes"><span>Impossible de parler des lieux de cinéma en Belgique sans parler de
+                                Bruges. Et
+                                impossible
+                                de parler de Bruges, sans parler de "Bons Baisers de Bruges", la comédie
+                                criminelle mélancolique portée par Colin Farrell, Brendan Gleeson et Ralph Fiennes.
+                                C’est dans cette célèbre ville belge que leurs personnages de tueurs vont se réfugier
+                                après
+                                une mission ratée. La visite de la</span>
+                            Venise du Nord par ces touristes accidentels joue merveilleusement avec le cadre
+                            mystérieux et pittoresque de la ville.<br>
+                            <br>
+                            On peut également citer "Au Risque de se Perdre", mélodrame de 1958 avec Audrey
+                            Hepburn, dans lequel celle-ci joue une nonne dans un couvent brugeois, mais
+                            aussi la comédie de science-fiction bollywoodienne "PK", qui a été un énorme succès
+                            en Inde, ou encore la série britannique "The White Queen".
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </main>
+    </div>
+
+    <!-- Lien vers le JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer py-4 bg-dark text-light text-center">
+        <p>&copy; Suivez-nous :
+            <br> Nos applications : Belmi News, Actu Belgique, Monde, Régions, Magazine, Sport, Football, Résultats /
+            Classements, People, Royautés, Buzz, Télé
+            <br> Belmi Belgium, Infos société, Charte vie privée, Conditions d'utilisation, Politique Cookies, Gérer les
+            cookies, Emplois et Stages, Plan d'accès, Publicité - Rossel Advertising
+            <br> Comment nous contacter ? Alertez-nous
+        </p>
+
+        <div class="division"></div>
+        <!-- Liens supplémentaires sous forme de listes organisées, mais sans liens -->
+        <div class="footer-links">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Nos thématiques</h5>
+                    <ul>
+                        <li>Info</li>
+                        <li>Sport</li>
+                        <li>Régions</li>
+                        <li>Culture</li>
+                        <li>Environnement</li>
+                        <li>Bien-Être</li>
+                        <li>Tech</li>
+                        <li>Vie pratique</li>
+                        <li>Services</li>
+                        <li>Actu en continu</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Autres sections</h5>
+                    <ul>
+                        <li>Grille des programmes</li>
+                        <li>Score center</li>
+                        <li>Météo</li>
+                        <li>MobilInfo</li>
+                        <li>Loterie</li>
+                        <li>Titres diffusés</li>
+                        <li>Concours</li>
+                        <li>Flux RSS</li>
+                        <li>Archives (sitemap)</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <h5>Nos émissions</h5>
+                    <ul>
+                        <li>Le Belmi Cactus</li>
+                        <li>On n'est pas des pigeons</li>
+                        <li>The Voice Belgique</li>
+                        <li>Jardins et Loisirs</li>
+                        <li>La Grande Forme</li>
+                        <li>IXPé</li>
+                        <li>Viva for life</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="division"></div>
+
+        <!-- Section contact et entreprise sans liens -->
+        <div class="footer-contact">
+            <p>
+                Contacter Belmi News | Recevoir Belmi News | Travailler a Belmi News | Notre Entreprise | Presse |
+                Éducation aux
+                Médias |
+                Visites guidées et ateliers | Régie publicitaire (RMB)
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
